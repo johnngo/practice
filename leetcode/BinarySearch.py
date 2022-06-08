@@ -1,4 +1,10 @@
-# leetcode #704. Binary Search
+#leetcode #704. Binary Search
+#Given an array of integers - nums which is sorted in ascending order
+# and an integer target, write a function to search target in nums.
+# If target exists, then return its index, otherwise, return -1.
+# 
+# Write an algorithm with 0(log n) runtime complexity 
+
 from typing import List
 
 def search(nums:List[int],target:int) ->int:
