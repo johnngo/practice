@@ -14,5 +14,5 @@ def sortedSquares(nums: List[int]) -> List[int]:
     else:
       result.append(nums[right] ** 2)
       right -= 1
-    result.reverse()
+    result.sort()
     return result
