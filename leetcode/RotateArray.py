@@ -28,3 +28,23 @@ def rotate(nums, k: int) -> None:
 #rotate 1 steps to the right: [7,1,2,3,4,5,6]
 #rotate 2 steps to the right: [6,7,1,2,3,4,5]
 #rotate 3 steps to the right: [5,6,7,1,2,3,4]
+
+#alternative solution
+
+def rotate(nums, k):
+  def numReverse(start, end):
+    while start < end:
+      # switching index position of an array
+      nums[start], nums[end] = nums[end], nums[start]
+      start +=1
+      end -=1
+  k, n = k % len(nums), len(nums)
+  if k:
+    ## n = len(nums) - 1
+    numReverse(0, n - 1)
+    ## k = 3
+    numReverse(0, k - 1)
+    ## k =3, len(nums) - 1
+    numReverse(k, n - 1)
+
+    
