@@ -14,6 +14,6 @@ def lengthOfLongestSubstring(s):
     else:
       maxLength = max(maxLength, i - start + 1)
 
-    usedChar[s[i]] = I
+    usedChar[s[i]] = i
 
     return maxLength
