@@ -5,6 +5,10 @@
 # the relationships among them, and the functions or operations
 # that can be applied to the data. i.e., it is an algebraic
 # structure about data
+
+# Task - Given an integer array nums, find the contiguous subarray 
+# ( containing at least one number) which has the largest sum and return its sum
+
 from typing import List
 
 def maxSubArray(nums: List[int]) -> int:
@@ -23,6 +27,7 @@ def maxSubArray(nums: List[int]) -> int:
     if prefix_sum > largest:
       largest = prefix_sum
   
+  print(largest)
   return largest
 
 nums = [-2,1,-3,4,-1,2,1,-5,4]
